@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fluid Flow Calculations</title>
+    
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/stylesheets/navbar.css">
+
+     <link rel="stylesheet" href="\stylesheets\footer.css">
+     <link rel="stylesheet" href="\stylesheets\fluidflow.css">
+     <script>
+        // Function to apply dark mode based on user preference from Local Storage
+        function applyDarkModeFromStorage() {
+          var isDarkMode = localStorage.getItem('darkMode') === 'true';
+          var body = document.body;
+      
+          if (isDarkMode) {
+            body.classList.add('dark-mode');
+          } else {
+            body.classList.remove('dark-mode');
+          }
+        }
+      
+        // Apply dark mode when the page loads
+        document.addEventListener('DOMContentLoaded', function() {
+          applyDarkModeFromStorage();
+        });
+      </script>
+</head>
+<body class="d-flex flex-column h-100 size">
+    <header>
+        <%- include('navbar.ejs') %>
+    </header>
+    <main>
+      <section class="section-list">
+        <div class="container px-4 ">
+          <h1 class="heading-primary mx-md-n5">Fluid Flow</h1>
+          <p class="heading-description col-12 col-xxl-8">
+            Calculation for pressure losses in pipes and fittings for a variety
+            of fluid flows that include single and two-phase flows.
+          </p>
+
+          <div class="row g-5" data-masonry='{"percentPosition": true }'>
+            <!-- Col Starts -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card shadow">
+                <p class="list-title">Single Phase Flow</p>
+                <ul class="list-group list-group-flush">
+                  <a href="pipe_sizing.html" class="list-group-item list-group-item-action list-group-item-light">
+                    Pipe Sizing Liquid &amp; Solvents
+                  </a>
+
+                  <a href="fluid_flow_single_phase.html" class="list-group-item list-group-item-action list-group-item-light">
+                    Single phase incompressible fluid flow pressure drop
+                  </a>
+                  <a href="fluid_flow_compressible.html" class="list-group-item list-group-item-action list-group-item-light">
+                    Compressible fluid flow through a pipe
+                  </a>
+                  <a href="fluid_flow_power_law.html" class="list-group-item list-group-item-action list-group-item-light">
+                    Non-Newtonian Power Law fluid flow through a pipe
+                  </a>
+                  <a href="fluid_flow_bingham_plastic.html" class="list-group-item list-group-item-action list-group-item-light">
+                    Non-Newtonian Bingham Plastic fluid flow through a pipe
+                  </a>
+                  <a href="solved/packed_bed.html" class="list-group-item list-group-item-action list-group-item-light">
+                    Packed Bed Pressure Drop Ergun Equation
+                  </a>
+                </ul>
+              </div>
+            </div>
+            <!-- Col Ends -->
+
+            <!-- Col Starts -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card shadow">
+                <p class="list-title">Pumps</p>
+                <ul class="list-group list-group-flush">
+                  <a href="calc/pump.html" class="list-group-item list-group-item-action list-group-item-light">
+                    Pump Sizing Calculation
+                  </a>
+                  <a href="solved/pumpOp.html" class="list-group-item list-group-item-action list-group-item-light">
+                    Pump Operation in Series &amp; Parallel
+                  </a>
+                  <a href="solved/pumpCurve.html" class="list-group-item list-group-item-action list-group-item-light">
+                    Centrifugal Pump Curves
+                  </a>
+                </ul>
+              </div>
+            </div>
+            <!-- Col Ends -->
+
+            <!-- Col Starts -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card shadow">
+                <p class="list-title">Compressor, Blower, Fan</p>
+                <ul class="list-group list-group-flush">
+                  <a href="fan.html" class="list-group-item list-group-item-action list-group-item-light">
+                    Blower &amp; Fan Calculation
+                  </a>
+                  <a href="calc/recipRating.html" class="list-group-item list-group-item-action list-group-item-light">
+                    Reciprocating Compressor Rating
+                  </a>
+                  <a href="calc/compress.html" class="list-group-item list-group-item-action list-group-item-light">
+                    Reciprocating Compressor Calculation
+                  </a>
+                </ul>
+              </div>
+            </div>
+            <!-- Col Ends -->
+            <!-- Col Starts -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card shadow">
+                <p class="list-title">Pipe Sizing</p>
+                <ul class="list-group list-group-flush">
+                  <a href="fluid_flow_fitting_losses.html" class="list-group-item list-group-item-action list-group-item-light">
+                    Pipe Fitting Losses based on 3K and 2K method
+                  </a>
+                  <a href="solved/gasPipeSizing.html" class="list-group-item list-group-item-action list-group-item-light">
+                    Natural Gas Pipeline Sizing
+                  </a>
+                </ul>
+              </div>
+            </div>
+            <!-- Col Ends -->
+            <!-- Col Starts -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card shadow">
+                <p class="list-title">Two Phase Flow</p>
+                <ul class="list-group list-group-flush">
+                  <a href="fluid_flow_beggs_brill.html" class="list-group-item list-group-item-action list-group-item-light">
+                    Beggs &amp; Brill method for two phase flow
+                  </a>
+                  <a href="fluid_flow_two_phase.html" class="list-group-item list-group-item-action list-group-item-light">
+                    Two phase flow in horizontal pipe
+                  </a>
+                </ul>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </section>
+    </main>
+    <%- include('footer.ejs') %>
+    <script src="/javascripts/app.js"></script>
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
+    integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D"
+    crossorigin="anonymous"
+    async
+  ></script>
+</body>
+</html>

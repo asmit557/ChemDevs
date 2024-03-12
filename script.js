@@ -8,4 +8,12 @@ app.get('/', (req, res) => {
   res.render("index")
 })
 
+app.get('/fluidflow', (req, res) => {
+  res.render("fluidflow")
+})
+
+app.get('/index', (req, res) => {
+  res.render("index")
+})
+
 app.listen(3000)

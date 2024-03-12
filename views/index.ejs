@@ -6,7 +6,24 @@
   <title>Checalc</title>
   <link rel="stylesheet" href="/stylesheets/styles.css">
   <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
-
+  <script>
+    // Function to apply dark mode based on user preference from Local Storage
+    function applyDarkModeFromStorage() {
+      var isDarkMode = localStorage.getItem('darkMode') === 'true';
+      var body = document.body;
+  
+      if (isDarkMode) {
+        body.classList.add('dark-mode');
+      } else {
+        body.classList.remove('dark-mode');
+      }
+    }
+  
+    // Apply dark mode when the page loads
+    document.addEventListener('DOMContentLoaded', function() {
+      applyDarkModeFromStorage();
+    });
+  </script>
 </head>
 <body>
     <section class="parallax"> 
@@ -17,10 +34,7 @@
       <ul>
         <li><a href="#hero-section">Home</a></li>
         <li><a href="#explore-section">Explore</a></li>
-        <li><a href="#" id="dark-mode-button" onclick="toggleDarkMode()">Dark Mode</a></li>
-        
-        
-        
+        <li><a href="#" id="dark-mode-button" onclick="toggleDarkMode()" class="box-behind">CAL</a></li>       
       </ul>
     </div>
   </nav>
@@ -35,10 +49,10 @@
 
   <section class="new-section" id="new-section">
     <div class="container">
-      <h2>New Section</h2>
-      <p>Stay updated with the latest in chemical engineering!</p>
-      <p>Explore cutting-edge research, industry trends, and innovative technologies.</p>
-      <button onclick="scrollToExplore()">Explore Now</button>
+      <h2>New Feature - CAL</h2>
+      <h3>!!All new calulator theme is added!!</h3>
+      <!-- <h2>TRY NOW - Click on CAL </h2> -->
+      <button onclick="toggleDarkMode()">Try</button>
     </div>
   </section>
 
@@ -81,7 +95,7 @@
       <div class="card">
         <h3>Fluid Flow Calculations</h3>
         <p>Explore calculations related to fluid flow.</p>
-        <a href="next_page.html"><button>Explore</button></a>
+        <a href="fluidflow"><button>Explore</button></a>
       </div>
       <!-- Reactor Design -->
       <div class="card">

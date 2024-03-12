@@ -1,0 +1,28 @@
+body {
+  transition: background-color 0.3s ease;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #c4c4c4; /* Background color for the entire page */
+  }
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #003366; /* Dark background color for the footer */
+    color: #fff; /* Text color for the footer */
+    padding: 15px 0;
+    text-align: center;
+    font-size: medium;
+
+}
+/* Dark Mode */
+.dark-mode body {
+  background-color: #27374D; /* Dark background color for the entire page */
+  color: #DDE6ED; /* Light text color */
+}
+
+.dark-mode footer {
+  background-color: #526D82; /* Dark background color for the footer */
+  color: #DDE6ED; /* Light text color for the footer */
+}

@@ -1,0 +1,78 @@
+body {
+  transition: background-color 0.3s ease;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #c4c4c4; /* Background color for the entire page */
+  }
+  .navcontainer{
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  /* Navigation Bar Styles */
+ 
+  .navbar {
+    
+    background-color: #ffffff; 
+    color: #000000; /* Text color for the navbar */
+   
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Ensure the navbar is above other content */
+    box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2); 
+  } 
+  .navbar h1 {
+    margin: 0;
+    font-size: large;
+    font-weight: 600;
+  }
+  
+  .navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .navbar ul li {
+    display: inline;
+    margin-left: 20px;
+  }
+  
+  .navbar ul li a {
+    font-size: medium;
+    text-decoration: none;
+    color: #000000;
+  }
+  .box-behind {
+    
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #7599b5;
+    
+    border-radius: 2px;
+  }
+  /* Dark Mode */
+.dark-mode body {
+  background-color: #27374D; /* Dark background color for the entire page */
+  color: #DDE6ED; /* Light text color */
+}
+
+
+.dark-mode .navbar {
+  background-color: #526D82; /* Dark background color for the navbar */
+  color: #DDE6ED; /* Light text color for the navbar */
+  box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2); /* Dark shadow for the navbar */
+}
+.dark-mode .box-behind{
+  background-color:  #27333d; /* Background color of the box */;
+}
+
+.dark-mode .navbar h1 {
+  color: #DDE6ED; /* Light text color for heading in navbar */
+}
+
+.dark-mode .navbar ul li a {
+  color: #DDE6ED; /* Light text color for navbar links */
+}

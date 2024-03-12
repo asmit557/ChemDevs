@@ -6,6 +6,7 @@ html{
 
 
 body {
+  transition: background-color 0.3s ease;
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
@@ -54,7 +55,14 @@ body {
     color: #000000;
   }
   
-
+  .box-behind {
+    
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #7599b5;
+    
+    border-radius: 2px;
+  }
   /* Hero Section Styles */
 
   .hero-section {
@@ -184,8 +192,11 @@ body {
   flex-direction: column;
   gap: 10px;
   }
-  
+  .card p{
+    color: #555;
+  }
   .card h3 {
+    color: #333;
     margin-top: 0;
   }
   
@@ -198,35 +209,7 @@ body {
     text-align: center;
   }
 
-  /* Custom Theme - Dark Mode */
-  .dark-mode {
-    background-color: #353434; /* Dark background color */
-    color: #fff; /* Text color for dark mode */
-  }
-  
-  .dark-mode .navbar {
-    background-color: transparent;
-    /* Dark background color for the navbar in dark mode */
-    color: #fff;
-  }
-  .dark-mode .navbar ul li a{
-    /* font-family: gilroy; */
-    color: #fff;
-  }
-  
-  .dark-mode .hero-section {
-    background-color: #007bff; /* Adjust hero section background color for dark mode */
-  }
-  
-  .dark-mode .hero-section button {
-    background-color: #444; /* Adjust button background color for dark mode */
-    color: #fff; /* Adjust button text color for dark mode */
-  }
-  
-  .dark-mode .card {
-    background-color: #444; /* Adjust card background color for dark mode */
-    color: #fff; /* Adjust card text color for dark mode */
-  }
+ 
   
   .card button {
     background-color: #007bff; /* Button background color in light mode */
@@ -242,21 +225,84 @@ body {
   .card button:hover {
     background-color: #0056b3; /* Darker background color on hover */
   }
-  
-  /* Dark mode button styles */
-  .dark-mode .card button {
-    background-color: #54a6ff; /* Button background color in dark mode */
-  }
-  
-  .dark-mode .card button:hover {
-    background-color: #003366; /* Darker background color on hover in dark mode */
-  }
+   /* Custom Theme - Dark Mode */
+.dark-mode {
+  background-color: #27374D; /* Dark background color */
+  color: #DDE6ED; /* Text color for dark mode */
+}
 
- .dark-mode .new-section{
-  background-color: #c1bbbb;
-  /* color: #000000; */
- }
-  
+.dark-mode .navbar {
+  background-color: #27374D; /* Dark background color for the navbar */
+  color: #feffff; /* Light text color for the navbar */
+  box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2); /* Dark shadow for the navbar */
+}
+
+.dark-mode .navbar h1 {
+  color: #DDE6ED; /* Light text color for heading in navbar */
+}
+
+.dark-mode .navbar ul li a {
+  color: #DDE6ED; /* Light text color for navbar links */
+}
+
+.dark-mode .hero-section {
+  background-color: #526D82; /* Adjusted hero section background color for dark mode */
+}
+
+.dark-mode .hero-section button {
+  background-color: #9DB2BF; /* Adjusted button background color for dark mode */
+  color: #27374D; /* Adjusted button text color for dark mode */
+}
+
+.dark-mode .card {
+  background-color: #526D82; /* Adjusted card background color for dark mode */
+  color: #DDE6ED; /* Adjusted card text color for dark mode */
+}
+
+/* Dark mode button styles */
+.dark-mode .card button {
+  background-color: #9DB2BF; /* Adjusted button background color in dark mode */
+  color: #27374D;
+}
+.dark-mode .card p{
+  color: #DDE6ED;
+}
+.dark-mode .card h3{
+  padding-bottom: 8px;
+  color: #fdfeff;
+  border-bottom: 1px solid #f5f3f3;
+
+}
+.dark-mode .card button:hover {
+  background-color: #7b8c96; /* Adjusted darker background color on hover in dark mode */
+}
+
+.dark-mode .new-section {
+  background-color: #9DB2BF; /* Adjusted background color for new section in dark mode */
+}
+.dark-mode .new-section button{
+  background-color: #526D82;
+}
+  /* Dark Mode */
+.dark-mode body {
+  background-color: #27374D; /* Dark background color for the entire page */
+  color: #DDE6ED; /* Light text color */
+}
+
+.dark-mode .box-behind{
+  background-color:  #526D82; /* Background color of the box */;
+}
+
+/* Dark Mode */
+.dark-mode body {
+  background-color: #27374D; /* Dark background color for the entire page */
+  color: #DDE6ED; /* Light text color */
+}
+
+.dark-mode footer {
+  background-color: #526D82; /* Dark background color for the footer */
+  color: #DDE6ED; /* Light text color for the footer */
+}
 
  
  
