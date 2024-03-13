@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thermodynamic Calculations</title>
+    
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/stylesheets/navbar.css">
+
+     <link rel="stylesheet" href="\stylesheets\footer.css">
+     <link rel="stylesheet" href="\stylesheets\fluidflow.css">
+     <script>
+        // Function to apply dark mode based on user preference from Local Storage
+        function applyDarkModeFromStorage() {
+          var isDarkMode = localStorage.getItem('darkMode') === 'true';
+          var body = document.body;
+      
+          if (isDarkMode) {
+            body.classList.add('dark-mode');
+          } else {
+            body.classList.remove('dark-mode');
+          }
+        }
+      
+        // Apply dark mode when the page loads
+        document.addEventListener('DOMContentLoaded', function() {
+          applyDarkModeFromStorage();
+        });
+      </script>
+</head>
+<body class="d-flex flex-column h-100 size">
+    <header>
+        <%- include('navbar.ejs') %>
+    </header>
+    <main>
+      <section class="section-list">
+        <div class="container px-4 ">
+          <h1 class="heading-primary mx-md-n5">Thermodynamics</h1>
+          <p class="heading-description col-12 col-xxl-8">
+            Calculation for thermodynamic energies, ideal gas, real gas and various equations
+          </p>
+
+          <div class="row g-5" data-masonry='{"percentPosition": true }'>
+            <!-- Col Starts -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card shadow">
+                <p class="list-title">Energy</p>
+                <ul class="list-group list-group-flush">
+                  <a href="pipe_sizing.html" class="list-group-item list-group-item-action list-group-item-light">
+                    Gibbs Free Energy
+                  </a>
+
+                  <a href="fluid_flow_single_phase.html" class="list-group-item list-group-item-action list-group-item-light">
+                    Change in Enthalpy
+                  </a>
+                  <a href="fluid_flow_compressible.html" class="list-group-item list-group-item-action list-group-item-light">
+                    Change in Entropy
+                  </a>
+                  <a href="fluid_flow_power_law.html" class="list-group-item list-group-item-action list-group-item-light">
+                    Change in Internal Energy
+                  </a>
+                </ul>
+              </div>
+            </div>
+            <!-- Col Ends -->
+
+            <!-- Col Starts -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card shadow">
+                <p class="list-title">Ideal and Real Gas</p>
+                <ul class="list-group list-group-flush">
+                  <a href="calc/pump.html" class="list-group-item list-group-item-action list-group-item-light">
+                    Ideal Gas Law
+                  </a>
+                  <a href="solved/pumpOp.html" class="list-group-item list-group-item-action list-group-item-light">
+                    Real Gas Law
+                  </a>
+                </ul>
+              </div>
+            </div>
+            <!-- Col Ends -->
+
+            <!-- Col Starts -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card shadow">
+                <p class="list-title">Others</p>
+                <ul class="list-group list-group-flush">
+                  <a href="fan.html" class="list-group-item list-group-item-action list-group-item-light">
+                    Clapeyron Equation
+                  </a>
+                  <a href="calc/recipRating.html" class="list-group-item list-group-item-action list-group-item-light">
+                    Chemical Potential
+                  </a>
+                  <a href="calc/compress.html" class="list-group-item list-group-item-action list-group-item-light">
+                    Maxwell Relations
+                  </a>
+                </ul>
+              </div>
+            </div>   
+          </div>
+        </div>
+      </section>
+    </main>
+    <%- include('footer.ejs') %>
+    <script src="/javascripts/app.js"></script>
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
+    integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D"
+    crossorigin="anonymous"
+    async
+  ></script>
+</body>
+</html>

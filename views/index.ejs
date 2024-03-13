@@ -34,7 +34,20 @@
       <ul>
         <li><a href="#hero-section">Home</a></li>
         <li><a href="#explore-section">Explore</a></li>
-        <li><a href="#" id="dark-mode-button" onclick="toggleDarkMode()" class="box-behind">CAL</a></li>       
+        <li><a href="#" id="dark-mode-button" onclick="toggleDarkMode()" class="box-behind">CAL</a></li>    
+        <li class="chatbot"><script type="text/javascript">
+          (function(d, t) {
+              var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+              v.onload = function() {
+                window.voiceflow.chat.load({
+                  verify: { projectID: '65c07f62a2c8db2594344604' },
+                  url: 'https://general-runtime.voiceflow.com',
+                  versionID: 'production'
+                });
+              }
+              v.src = "https://cdn.voiceflow.com/widget/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
+          })(document, 'script');
+        </script></li>   
       </ul>
     </div>
   </nav>
@@ -51,6 +64,7 @@
     <div class="container">
       <h2>New Feature - CAL</h2>
       <h3>!!All new calulator theme is added!!</h3>
+      <h3>!!Personal assistant is there to help you now!!</h3>
       <!-- <h2>TRY NOW - Click on CAL </h2> -->
       <button onclick="toggleDarkMode()">Try</button>
     </div>
@@ -65,31 +79,31 @@
       <div class="card">
         <h3>Reaction Kinetics</h3>
         <p>Explore calculations related to reaction kinetics.</p>
-        <a href="next_page.html"><button>Explore</button></a>
+        <a href="chemicalkinetics"><button>Explore</button></a>
       </div>
       <!-- Distillation -->
       <div class="card">
         <h3>Distillation</h3>
         <p>Explore calculations related to distillation.</p>
-        <a href="next_page.html"><button>Explore</button></a>
+        <a href="distillation"><button>Explore</button></a>
       </div>
       <!-- Mass Transfer -->
       <div class="card">
         <h3>Mass Transfer</h3>
         <p>Explore calculations related to mass transfer.</p>
-        <a href="next_page.html"><button>Explore</button></a>
+        <a href="masstransfer"><button>Explore</button></a>
       </div>
       <!-- Heat Transfer -->
       <div class="card">
         <h3>Heat Transfer</h3>
         <p>Explore calculations related to heat transfer.</p>
-        <a href="next_page.html"><button>Explore</button></a>
+        <a href="heattransfer"><button>Explore</button></a>
       </div>
       <!-- Thermodynamics -->
       <div class="card">
         <h3>Thermodynamics</h3>
         <p>Explore calculations related to thermodynamics.</p>
-        <a href="next_page.html"><button>Explore</button></a>
+        <a href="thermodynamics"><button>Explore</button></a>
       </div>
       <!-- Fluid Flow Calculations -->
       <div class="card">

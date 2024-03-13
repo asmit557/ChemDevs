@@ -18,10 +18,25 @@
         <li><a href="index">Home</a></li>
         <li><a href="index" onclick="scrollToExplore()">Explore</a></li>
         <li><a href="#" id="dark-mode-button" onclick="toggleDarkMode()" class="box-behind">CAL</a></li>  
+        <li class="chatbot"><script type="text/javascript">
+          (function(d, t) {
+              var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+              v.onload = function() {
+                window.voiceflow.chat.load({
+                  verify: { projectID: '65c07f62a2c8db2594344604' },
+                  url: 'https://general-runtime.voiceflow.com',
+                  versionID: 'production'
+                });
+              }
+              v.src = "https://cdn.voiceflow.com/widget/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
+          })(document, 'script');
+        </script></li>
       </ul>
     </div>
   </nav>
   <script src="/javascripts/app.js"></script>
+  
+<script src="app.js"></script>
 
 </body>
 </html>
