@@ -1,0 +1,140 @@
+body {
+    font-family: Arial, sans-serif;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0; /* Light mode background color for the entire page */
+    color: #222; /* Text color */
+}
+
+.container {
+   
+    padding-left: 80px; 
+    padding-right: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Input form styling */
+#input-form {
+    background-color: #c4c4c4; /* Light mode background color for the input form */
+    padding: 20px;
+    border-radius: 8px;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+    margin-right: 1005px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: #333; /* Text color */
+}
+#export-pdf{
+    margin-top: 20px;
+    /* margin-left: 400px; */
+}
+input[type="number"],
+select {
+    font-size: medium;
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    color: #333; /* Text color */
+}
+
+button {
+    display: inline;
+    background-color: #007bff; /* Button background color */
+    color: #fff; /* Button text color */
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker background color on hover */
+}
+
+/* Graph container styling */
+#graph-container {
+    margin-top: 20px;
+    /* margin-left: 550px; */
+    max-width: 1200px;
+}
+
+canvas {
+    background-color: transparent;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Dark mode */
+.dark-mode {
+    background-color: #27374D; /* Dark mode background color for the entire page */
+    color: #DDE6ED; /* Text color */
+}
+
+.dark-mode #input-form {
+    background-color: #27374D; /* Dark mode background color for the input form */
+    /* box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); */
+}
+
+.dark-mode label {
+    color: #DDE6ED; /* Text color for labels in dark mode */
+}
+
+.dark-mode input[type="number"],
+.dark-mode select {
+    font-weight: 500;
+    background-color: #9DB2BF; /* Dark mode background color for input fields */
+    border-color: #9DB2BF;
+    color: #27374D; /* Text color for input fields in dark mode */
+}
+
+.dark-mode button {
+    background-color: #37AA9C; /* Button background color in dark mode */
+    color: #fff; /* Button text color in dark mode */
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.dark-mode button:hover {
+    background-color: #94F3E4; /* Darker background color on hover in dark mode */
+}
+
+/* Rate constant container styling */
+#rate-constant {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f0f0f0; /* Light mode background color for rate constant container */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* For dark mode */
+.dark-mode #rate-constant {
+    background-color: #526D82; /* Dark mode background color for rate constant container */
+    color: #DDE6ED; /* Text color */
+    border-color: #9DB2BF;
+}
+
+/* Graph styling */
+#graph {
+    background-color: #fff; /* Light mode background color for graph */
+}
+
+/* For dark mode */
+.dark-mode #graph {
+    background-color: #DDE6ED; /* Dark mode background color for graph */
+    color: #27374D;
+}
+
