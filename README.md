@@ -1,5 +1,5 @@
 <h1>Problem Statement</h1>
-<p>Building a cpmprehensive calculator which is capable of doing chemical calculations across all chemical domain</p>
+<p>Building a comprehensive calculator which is capable of doing chemical calculations across all chemical domain</p>
 <h1>Team Members</h1>
   <p>Jitanshu Agrawal (20220027)</p>
   <p>Asmit Verma (20222016)</p>
@@ -11,7 +11,7 @@
   <p>EJS</p>
   <p>Express.js</p>
 <h1>Installation Process :</h1>
-<p>Clone the repo using the command: git clone (repo_link) </p>
+<p>Clone the repo using the command: git clone https://github.com/asmit557/ChemDevs.git</p>
 <p>Install all npm pakages using the command : npm install </p>
 <p>Install node using the command : npm i node</p>
 <p>Install express js using the command : npm i express</p>
